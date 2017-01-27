@@ -3,32 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Hello Fucking World</title>
-        <style>
-            section
-            {
-                width: 100%;
-                height: 250px;
-                background-color: black;                
-            }
-            .titulo
-            {
-                width: 100%;
-                height: 100%;
-                border-radius: 25px;
-                border: 2px solid #73AD21; 
-
-                
-            }
-            .texto
-            {
-                display: flex;
-                color: white;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 30px;                
-                justify-content: center;
-                align-items: center;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <script type="text/javascript" src="funciones.js"></script>
     </head>
     <body>
         <section>
@@ -43,6 +19,73 @@
                 
             
         </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <img src="http://lorempixel.com/g/400/200/" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="http://lorempixel.com/g/400/201/" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="http://lorempixel.com/g/400/202/" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="http://lorempixel.com/g/400/203/" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+                </div>
+
+                <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                        <img src="http://lorempixel.com/g/401/200/" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                        <img src="http://lorempixel.com/g/402/200/" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                        <img src="http://lorempixel.com/g/403/200/" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                        <img src="http://lorempixel.com/g/404/200/" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                    <p id="caption"></p>
+                    </div>
+
+                    <div class="column">
+                    <img class="demo" src="http://lorempixel.com/g/400/200/" onclick="currentSlide(1)" alt="Nature">
+                    </div>
+
+                    <div class="column">
+                    <img class="demo" src="http://lorempixel.com/g/401/200/" onclick="currentSlide(2)" alt="Trolltunga">
+                    </div>
+
+                    <div class="column">
+                    <img class="demo" src="http://lorempixel.com/g/402/200/" onclick="currentSlide(3)" alt="Mountains">
+                    </div>
+
+                    <div class="column">
+                    <img class="demo" src="http://lorempixel.com/g/403/200/" onclick="currentSlide(4)" alt="Lights">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <h1>
             Esto es una prueba para trabajar con el git.
         </h1>
